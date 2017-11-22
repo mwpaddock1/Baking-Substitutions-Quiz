@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <title>Substitute Ingredients for Baking Quiz</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>  
+  <header>
+    <section class="start-section row">      
+      <div class="col-6">
+        <div class="text-box">
+          <h1>Substitutions Quiz!</h1>
+          <p>Do you want to bake something, but you are missing key ingredients?</p>
+          <p>This quiz will help you identify some substitute ingredients that might help!</p>
+          <!--prompts the user to start the quiz-->    
+          <button class="start-quiz" type="button">Start</button> 
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="image-box">
+          <div class="starting-image">
+            <img src="https://www.cmswire.com/~/media/322af23003f24496a52d8f2181739cb8.jpg?mw=320&mh=240&hash=724A9F7D2A0BC7CE8C8B4D8FD39E80A8D6AF7642" alt="Baking ingredients displayed on a table wth baking utensils">
+          </div>
+        </div>
+      </div>         
+    </section> 
+  </header>
+   
+  <main> 
+     <!--Place for displaying the missing ingredient and the possible substitution-->
+    <section class="js-questions-section row hidden">
+      <div class="col-6">
+        <form id='quiz-possible-answers'>
+         <fieldset>        
+           <div class="text-box">
+             <p class = 'questionNumber'></p>  
+             <legend class="missingIngredient"></legend>           
+             <!--displays the possible answers-->                  
+             <input type="radio" name="answer" id="answer0" value="0" autofocus><label for='answer0'>insert answer0</label><br><br>
+             <input type="radio" name="answer" id="answer1" value="1"><label for='answer1'>insert answer1</label><br><br>
+             <input type="radio" name="answer" id="answer2" value="2"><label for='answer2'>insert answer2</label><br><br>
+             <input type="radio" name="answer" id="answer3" value="3"><label for='answer3'>insert answer3</label><br><br> 
+             <!--Prompts the user to answer the question-->  
+             <input type="submit" class="submit-answer" disabled>
+           </div>
+         </fieldset> 
+       </form>
+     </div>
+     <div class="questionImage-box col-6">      
+        <div id="startingImage"></div>
+     </div>
+
+   </section>
+   <!--Place for letting the user know if the correct answer has been selected and displaying it-->
+   <section class="js-feedback-section hidden row">
+     <div class="col-6">
+       <div class="text-box">
+         <!--Tell the user if the answer is correct or incorrect-->    
+         <div class="js-feedback feedback">
+         </div>
+           <p class="js-substitute"></p>
+           <p class="currentScore"></p>
+          <!--Prompts the user to move the game forward to next question or final page-->
+           <button id="next-button" type="submit">Next</button>
+         </div>
+       
+      </div>
+        
+       <div class="answerImage col-6">   
+         <div id="correctImage"></div>
+       </div>
+     </div>
+   </section>
+   <section class="js-final-section hidden row">
+     <div class="col-6">
+       <!--Place for displaying che final score-->
+       <div class="text-box">
+         <h1>Substitutions Quiz!</h1>
+         <p class="quizComplete"></p>
+         <p> You have completed the quiz!</p>        
+         <p> Would you like to try again?</p>
+         <!--Prompts the user to restart the quiz-->
+         <form name="restart-game">
+           <button id="restartButton" type="submit">Restart</button>
+         </form>
+       </div>
+     </div>
+     <div class="col-6">
+       <div class="final-image">
+         <img src ="https://media.defense.gov/2015/May/26/2001055165/-1/-1/0/150526-F-QMJ04-961.JPG" alt="two women in a commercial kitchen with baked goods">
+       </div>
+     </div> 
+   </section>
+ </main>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="index.js"></script>
+</body>  
+</html>

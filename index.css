@@ -1,0 +1,164 @@
+body {
+  background-color: #21403D;
+  color: #76e5dc;
+  font-size: 16px;
+  font-family: 'Roboto', helvetica, sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+ font-size: 1.5em;
+}
+
+button, .submit-answer{
+  padding-top: .75em;
+  padding-bottom: .75em;
+  background-color: #21403d;
+  border-radius: 5%;
+  width: 55%;
+  color: #76e5dc;
+  margin: auto;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #21403d;
+  background-color: #84fff4;
+}
+
+.submit-answer { 
+  width: 65%;
+  margin-top: 2em;
+  padding: .5em;
+  font-size: 1em;
+  margin-left: 15%;
+}  
+
+label {
+  margin-left: 0.2em; 
+  font-size:1.2em; 
+}
+
+label:hover, label:active {
+background: #84FFF4;
+}
+
+img {
+  width: 90%;  
+  object-fit: contain;
+  display: block;
+  margin: auto;
+  border-radius: 2%;
+  padding-bottom: 2em;
+}
+
+.image-box {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.starting-image {
+  padding-left: 0;
+  width: 85%;
+}
+  
+.row {
+  max-width: 1200px;
+  margin: 0 auto;  
+  width:100%;
+  background-color: #76E5DC;
+  color: #21403d;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+ 
+#quiz-possible-answers {
+  font-size: 1em;
+  padding: 1em;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.hidden {
+  display: none;
+}
+
+.missing-ingredient {
+  font-size: 2em;
+}
+
+.substitute {
+  font-size: 1.5em;
+}
+
+#restartButton {
+  margin-top: 1.5em;
+}
+
+/* Mobile default */
+.col-6 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.text-box p {
+    text-align:center;
+}
+
+legend {
+  font-size: 1.5em;
+  padding-bottom: .5em;
+}
+/*For non-mobile devices*/
+@media only screen and (min-width: 640px) {
+   /* grid, 6 columns 6/12 in % */
+  .col-6 {
+    width: 47%;
+  }
+  
+  .text-box {
+    padding: 3em;
+  }
+  
+  .starting-image {
+    padding-top: 0em;
+  }
+
+  .submit-answer {
+  width: 60%;
+  margin-left: 20%;
+  padding: .5em;
+  font-size: 1.3em;
+  }
+.image-box {
+  width:100%;
+ }
+ img {
+    padding-top: 2em;
+    width: 70%;
+ }
+
+ .row {
+    margin-top: 4em;
+  }
+}
+
